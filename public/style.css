@@ -1,21 +1,35 @@
 body{
   font-family: sans-serif;
   margin: 0;
+  text-align: center;
 }
 nav {
   background: #efefef;
-  height: 3rem;
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
 } 
+main{
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 5%;
+}
+main section:first-child{
+  grid-column: 2/4;
+}
+main section:nth-child(2n){
+  grid-column: 2/3;
+}
+section{
+  border-radius: 25px;
+  border:1px solid lightgray;
+  background-color: #FFFFF9;
+  padding: 1%;
+  margin: 2%;
+}
 #logo {
     grid-column: 2/3;
-    float:right;
+    text-align: left;
     margin:0;
     background-size: cover;
-}
-#navbar {
-    float: right;
 }
 ul{
   grid-column:3/4;
