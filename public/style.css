@@ -12,6 +12,7 @@ nav {
     grid-column: 2/3;
     float:right;
     margin:0;
+    background-size: cover;
 }
 #navbar {
     float: right;
