@@ -1,24 +1,37 @@
-body {
+body{
   font-family: sans-serif;
   margin: auto;
   max-width: 1280px;
+  margin: 0;
 }
-
-.navbar {
-  background-color: #313236;
-  border-radius: 2px;
-  max-width: 800px;
+nav {
+  background: #efefef;
+  height: 3rem;
+  
+}  
+#logo {
+    float:left;
+    margin:0;
 }
-
-.navbar a {
-  color: #aaa;
-  display: inline-block;
-  font-size: 15px;
-  padding: 10px;
+  
+#navbar {
+    float: right;
+} 
+li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+#active a{
+  color:orange;
+}
+a{
   text-decoration: none;
 }
 
-.navbar a:hover {
-  color: #ffffff;
-}
+
+
+
+
+
 
