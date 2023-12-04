@@ -16,7 +16,36 @@
           <li id="active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    
 
+    <h2>Nous contacter</h2>
+    <form method="get" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+       
+            <label>Nom <br>
+              <input name="Nom" type="text">
+            </label>
+            <label>Prénom <br>
+              <input name="Prenom" type="text">
+            </label>
+            <label>Email <br>
+              <input name="Email" type="text">
+            </label>
+            
+            <label for="Theme"> 
+              Thème<br>
+            <select name="select" id="select">
+            <option value="suivi d'inscription">Suivi d'inscription</option>
+            <option value="Candidature">Candidature</option>
+            <option value="Recrutement enseignant">Recrutement enseignan</option>
+            <option value="Je suis un robot pour formulaire">Je suis un robot pour formulaire</option>
+            </select>
+            </label>
+            
+            <label>
+              Message <section><textarea name="Message" type="text"></textarea></section>
+            </label>
+            <button type="submit">Envoyer</button>
+          </form>
   </body>
   </html>
 
