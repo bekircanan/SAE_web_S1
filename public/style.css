@@ -20,7 +20,7 @@ footer{
   grid-template-columns: 5% 1fr 1fr 5%;
   height: 10vh;
 }
-main section:first-child{
+main section:first-child,table{
   grid-column: 2/4;
 }
 main section:nth-child(2n){
@@ -36,8 +36,6 @@ section,header>h1>q{
 #logo,footer>p {
     grid-column: 2/3;
     text-align: left;
-    margin:0;
-    background-size: cover;
 }
 footer>p{
   margin-top: 10%;
@@ -61,24 +59,19 @@ a{
 header{
   display: grid;
   grid-template-rows: 2fr;
-  max-width: 100%;
 }
 #background-img{
-  order: -1;
   max-width: 100%;
-  height: auto;
+  height: 100%;
   grid-area: 1/1;
 }
 header>h1{
+  order: 1;
   grid-area: 1/1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
-
-
+table{
+  text-align: center;
+}
