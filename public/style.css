@@ -6,19 +6,16 @@ body{
   text-align: center;
   background: #efefef;
 }
-nav {
+nav,main {
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
 } 
 main{
   background-color: white;
-  display: grid;
-  grid-template-columns: 5% 1fr 1fr 5%;
 }
 footer{
   display: grid;
   grid-template-columns: 5% 1fr 1fr 5%;
-  height: 10vh;
 }
 main section:first-child,table{
   grid-column: 2/4;
@@ -74,4 +71,11 @@ header>h1{
 }
 table{
   text-align: center;
+}
+.grid_transport{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_transport  img{
+  grid-row: 1/3;
 }
