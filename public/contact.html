@@ -16,16 +16,29 @@
           <li id="active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <header>
-          <img src="" alt="background">
-      </header>
-      <main>
-        
-      </main>
-      <footer>
-        
-      </footer>
-
+    
+    <h2>Nous contacter</h2>
+    <img src="img/img_fond_form.png"/>
+    <img src="img/Img_vertical_Contact.png"/>
+    <form method="get" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
+       
+        <label for="Genre"> 
+        Genre<select name="select" id="select">
+          <option value="homme">Homme</option>
+          <option value="femme">Femme</option>
+          <option value="autre">Autre</option>
+          </select>
+        </label>
+        <label>Nom <input name="Nom" type="text">
+        </label>
+        <label>Prénom<input name="Prenom" type="text">
+        </label>
+        <label>Email<input name="Email" type="text">
+        </label>
+        <label>Message<textarea name="Message" type="text"></textarea>
+        </label>
+        <button type="submit">Envoyer</button>
+        </form>
   </body>
-  </html>
+</html>
 
