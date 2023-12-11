@@ -96,7 +96,7 @@ caption{
 /*Contact*/
 
 
-main section:first-child,img{
+main section:first-child img{
   grid-column: 2/3;
 }
 
@@ -104,8 +104,8 @@ form{
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: solid;
   border-radius: 5%;
+  height: 100%;
 }
 
 label:first-child{
@@ -137,12 +137,17 @@ form > button{
   grid-row: 6/7;
   grid-column: 3/4;
 }
-
 #img_verticale{
-  display: grid;
-  grid-template-rows:5% 1fr;
   border-radius: 5%;
-  border:solid;
-  
+ 
 }
 
+#phrase_img{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+#formulaire{
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
