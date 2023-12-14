@@ -174,3 +174,29 @@ label>select{ /*Choix option*/
 #select{ /*Interieur des options pour genre*/
   font-size: 100%;
 }
+
+@media (min-width:701px) { 
+  i.fa-solid.fa-bars{
+    display: none;
+  }
+  
+  }
+  @media (max-width:700px) { 
+      i.fa-solid.fa-bars{
+        text-align: end;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: larger;
+      }
+      ul{
+        display: none;
+      }
+      main{
+        display: grid;
+        grid-template-columns: 5% 2fr 5%;
+      }
+      section{
+        grid-column: 2/3;
+      }
+  
+   }
