@@ -108,33 +108,33 @@ main section:first-child img{
 form{
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   border-radius: 5%;
   height: 100%;
 }
 
-label:first-child{
-  grid-row: 2/3;
-  grid-column: 2/4;
-}
-
-label:nth-child(2){
+label:first-child{ /*genre*/
   grid-row: 3/4;
   grid-column: 2/3;
 }
 
-label:nth-child(3){
+label:nth-child(2){ /*nom*/
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+label:nth-child(3){/*prenom*/
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+label:nth-child(4){/*email*/
   grid-row: 3/4;
   grid-column: 3/4;
 }
 
-label:nth-child(4){
-  grid-row: 4/5;
-  grid-column: 2/4;
-}
-
-label:nth-child(5){
-  grid-row: 5/6;
+label:nth-child(5){/*Message*/
+  grid-row: 4/6;
   grid-column: 2/4;
 }
 
