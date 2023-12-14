@@ -176,11 +176,11 @@ label>select{ /*Choix option*/
 }
 
 @media (min-width:701px) { 
-  i.fa-solid.fa-bars{
-    display: none;
-  }
+    i.fa-solid.fa-bars{
+      display: none;
+    }
   
-  }
+}
   @media (max-width:700px) { 
       i.fa-solid.fa-bars{
         text-align: end;
@@ -195,8 +195,11 @@ label>select{ /*Choix option*/
         display: grid;
         grid-template-columns: 5% 2fr 5%;
       }
-      section{
-        grid-column: 2/3;
-      }
+      section,section>form{
+        grid-column: 2/3;
+      }
+      #img_verticale{
+        display: none;
+      }
   
-   }
+    }
