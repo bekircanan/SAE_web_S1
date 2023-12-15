@@ -20,17 +20,18 @@
       </nav>
     <header>
     <h1>Nous contacter</h1>
-    <img id="background-img" src="img/contact_img1.jpg" alt="background-img">
+    <img id="background-img" src="img/contact_img_1.jpg" alt="background-img">
     </header>
     <main>
       <section id = "phrase_img">
-    <p>Si vous avez des questions ou que vous voulez des renseignement</p>
-    <img id="img_verticale" src="img/img_vertical_contact2.jpg"/>
+    <h2>Si vous avez des questions ou que vous voulez des renseignement</h2>
+    <img id="img_verticale" src="img/img_vertical_contact2.jpg" alt="IUT">
   </section>
   <section id = "formulaire">
+  <!-- <h2>Contact</h2> -->
   <form method="get" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
         <label for="Genre"> 
-        Genre<select name="select" id="select">
+        Genre<select name="Genre" id="Genre">
           <option value="homme">Homme</option>
           <option value="femme">Femme</option>
           <option value="autre">Autre</option>
@@ -42,7 +43,7 @@
         </label>
         <label>Email<input name="Email" type="text">
         </label>
-        <label>Message<textarea id = "msg" name="Message" type="text"></textarea>
+        <label>Message<textarea resize= "none" id = "msg" name="Message"></textarea>
         </label>
         <button type="submit">Envoyer</button>
         </form>
