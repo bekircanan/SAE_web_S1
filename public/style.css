@@ -85,92 +85,73 @@ table{
   width: 100%;
   margin: auto;
 }
-th,td{
+th,td{ 
   border: solid;
   padding: 0.5% 0%;
 }
-caption{
+caption{ /*texte au dessus du tableau*/
   font-weight: bold;
   margin: 2%;
 }
 /*Contact*/
-
-main section:first-child img{
-  grid-column: 2/3;
-}
-
-form{
+form{ /*tout le formulaire*/
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5%;
   border-radius: 5%;
   height: 100%;
 }
-
 label:first-child{ /*genre*/
   grid-row: 3/4;
-  grid-column: 2/3;
-  
+  grid-column: 2/3; 
 }
-
 label:nth-child(2){ /*nom*/
   grid-row: 2/3;
   grid-column: 2/3;
 }
-
 label:nth-child(3){/*prenom*/
   grid-row: 2/3;
   grid-column: 3/4;
 }
-
 label:nth-child(4){/*email*/
   grid-row: 3/4;
   grid-column: 3/4;
 }
-
 label:nth-child(5){/*Message*/
   grid-row: 4/6;
   grid-column: 2/4;
 }
-
-form > button{
+form > button{ /*bouton du questionnaire*/
   grid-row: 7/8;
   grid-column: 3/4;
-  height: 100%;
+  height: 125%;
 }
-#img_verticale{
+#img_verticale{ /*image de l'iut*/
   border-radius: 5%;
 }
-#phrase_img{
+#phrase_img{ /* Phrase au dessus de l'img*/
   grid-row: 1/2;
   grid-column: 2/3;
 }
-
 label>input{ /* input de nom prenom email*/
   height: 35%;
   width: 90%;
-  
 }
-
 #msg{ /* input message*/
   height: 100%;
   width: 96%;
 }
-
 label>select{ /*Choix option*/
   height: 43%;
   width: 93%;
 }
-
 #Genre{ /*Interieur des options pour genre*/
   font-size: 100%;
 }
-
 #titre_contact{
   grid-row: 1/2;
   grid-column: 2/4;
 }
-
 @media (min-width:701px) { 
   i.fa-solid.fa-bars{
     display: none;
@@ -179,33 +160,29 @@ label>select{ /*Choix option*/
     grid-row: 1/2;
     grid-column: 3/4;
   }
-  
 }
-
-  @media (max-width:800px) { 
-      i.fa-solid.fa-bars{
-        text-align: end;
-        margin-top: auto;
-        margin-bottom: auto;
-        font-size: larger;
-      }
-      ul{
-        display: none;
-      }
-      main,footer{
-        display: block;
-      }
-      table{
-        font-size: small;
-      }
-      footer>p{
-        text-align: center;
-      }
-    }
-
-  @media (max-width:400px) {
-      #img_verticale{
-        display: none;
-      }
-
-  }
+ @media (max-width:800px) { 
+     i.fa-solid.fa-bars{
+       text-align: end;
+       margin-top: auto;
+       margin-bottom: auto;
+       font-size: larger;
+     }
+     ul{
+       display: none;
+     }
+     main,footer{
+       display: block;
+     }
+     table{
+       font-size: small;
+     }
+     footer>p{
+       text-align: center;
+     }
+   }
+ @media (max-width:400px) {
+     #img_verticale{
+       display: none;
+     }
+ }

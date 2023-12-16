@@ -10,7 +10,7 @@
   </head>
   <body>
     <nav>
-      <img id="logo" alt="Logo" src="img/logo.jpg">
+      <img id="logo" src="img/logo.jpg" alt="Logo du site">
       <i class="fa-solid fa-bars"></i>
         <ul>
           <li><a href="index.html">Accueil</a></li>
@@ -20,30 +20,31 @@
       </nav>
     <header>
     <h1>Nous contacter</h1>
-    <img id="background-img" src="img/contact_img_1.jpg" alt="background-img">
+    <img id="background-img" src="img/contact_img_1.jpg" alt="background picture">
     </header>
     <main>
     <section id = "phrase_img">
     <h2>Si vous avez des questions ou que vous voulez des renseignements</h2>
-    <img id="img_verticale" src="img/img_vertical_contact2.jpg" alt="IUT">
+    <img id="img_verticale" src="img/img_vertical_contact2.jpg" alt="IUT picture">
   </section>
   <section id = "formulaire">
   <!-- <h2>Contact</h2> -->
   <form method="get" action="https://perso.liris.cnrs.fr/pierre-antoine.champin/enseignement/intro-web/_static/formproc/debug">
         <label for="Genre"> 
-        Genre<select name="Genre" id="Genre">
+        Genre
+        <select name="Genre" id="Genre">
           <option value="homme">Homme</option>
           <option value="femme">Femme</option>
           <option value="autre">Autre</option>
-          </select>
+        </select>
         </label>
-        <label>Nom <input name="Nom" type="text">
+        <label>Nom <input required="required" name="Nom" type="text">
         </label>
-        <label>Prénom<input name="Prenom" type="text">
+        <label>Prénom<input required="required" name="Prenom" type="text">
         </label>
-        <label>Email<input name="Email" type="text">
+        <label>Email<input required="required" name="Email" type="text">
         </label>
-        <label>Message<textarea id = "msg" name="Message"></textarea>
+        <label>Message<textarea required="required" id = "msg" name="Message"></textarea>
         </label>
         <button type="submit">Envoyer</button>
         </form>
