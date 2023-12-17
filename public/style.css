@@ -28,6 +28,14 @@ section,header>h1>q{
   padding: 1%;
   margin: 2%;
 }
+section,header>h1>strong{
+  border-radius: 10px;
+  border:1px solid lightgray;
+  background-color: #FFFFF9;
+  padding: 1%;
+  margin: 2%;
+}
+
 #logo{
     grid-column: 2/3;
     text-align: left;
@@ -97,7 +105,7 @@ caption{ /*texte au dessus du tableau*/
 form{ /*tout le formulaire*/
   display: grid;
   grid-template-columns: 5% 2fr 2fr 5%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5%;
   border-radius: 5%;
   height: 100%;
 }
@@ -124,7 +132,8 @@ label:nth-child(5){/*Message*/
 form > button{ /*bouton du questionnaire*/
   grid-row: 7/8;
   grid-column: 3/4;
-  height: 125%;
+  height: 90%;
+  width: 97%;
 }
 #img_verticale{ /*image de l'iut*/
   border-radius: 5%;
