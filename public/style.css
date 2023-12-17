@@ -152,7 +152,10 @@ label>select{ /*Choix option*/
   grid-row: 1/2;
   grid-column: 2/4;
 }
-@media (min-width:701px) { 
+input[type="checkbox"] {
+ display: none;
+}
+@media (min-width:801px) { 
   i.fa-solid.fa-bars{
     display: none;
   }
@@ -162,15 +165,14 @@ label>select{ /*Choix option*/
   }
 }
  @media (max-width:800px) { 
-     i.fa-solid.fa-bars{
-       text-align: end;
-       margin-top: auto;
-       margin-bottom: auto;
-       font-size: larger;
-     }
-     ul{
-       display: none;
-     }
+  label[for="menu-toggle"]{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: end;
+    font-size: larger;
+  }
      main,footer{
        display: block;
      }
@@ -180,6 +182,30 @@ label>select{ /*Choix option*/
      footer>p{
        text-align: center;
      }
+    /* Style du menu développé lorsque la case est cochée */
+    input[type="checkbox"]:checked + nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      left: 0;
+      right: 0;
+      top: 45px;
+      background-color: #efefef;
+      grid-column: 2/4;
+    }
+    
+    input[type="checkbox"]:checked + nav ul li {
+      border-bottom: 1px solid #555;
+    }
+    
+    /* Masquer le menu lorsque la case n'est pas cochée */
+    input[type="checkbox"]:not(:checked) + nav ul {
+      display: none;
+    }
+    
+      nav ul li {
+        padding: 3%;
+      }
    }
  @media (max-width:400px) {
      #img_verticale{
