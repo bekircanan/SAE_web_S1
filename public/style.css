@@ -28,7 +28,7 @@ section,header>h1>q{
   padding: 1%;
   margin: 2%;
 }
-#logo,footer>p {
+#logo{
     grid-column: 2/3;
     text-align: left;
 }
@@ -163,25 +163,33 @@ input[type="checkbox"] {
     grid-row: 1/2;
     grid-column: 3/4;
   }
+  footer>p{
+    grid-column: 2/3;
+    text-align: left;
+  }
 }
  @media (max-width:800px) { 
-  label[for="menu-toggle"]{
-    grid-column: 3/4;
-    grid-row: 1/1;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: end;
-    font-size: larger;
-  }
-     main,footer{
-       display: block;
-     }
-     table{
-       font-size: small;
-     }
-     footer>p{
-       text-align: center;
-     }
+    label[for="menu-toggle"]{
+      grid-column: 3/4;
+      grid-row: 1/1;
+      margin-top: auto;
+      margin-bottom: auto;
+      text-align: end;
+      font-size: larger;
+    }
+    main{
+      display: block;
+    }
+    table{
+      font-size: small;
+    }
+    footer>p{
+      grid-row: 2/3;
+    }
+    footer>p,footer>ul{
+      grid-column: 2/4;
+      text-align: center;
+    }
     /* Style du menu développé lorsque la case est cochée */
     input[type="checkbox"]:checked + nav ul {
       display: flex;
@@ -202,11 +210,10 @@ input[type="checkbox"] {
     input[type="checkbox"]:not(:checked) + nav ul {
       display: none;
     }
-    
-      nav ul li {
-        padding: 3%;
-      }
-   }
+    nav ul li {
+      padding: 3%;
+    }
+  }
  @media (max-width:400px) {
      #img_verticale{
        display: none;
