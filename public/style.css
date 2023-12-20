@@ -209,8 +209,7 @@ input[type="checkbox"] {
       top: 45px;
       background-color: #efefef;
       grid-column: 2/4;
-    }
-    
+    }  
     input[type="checkbox"]:checked + nav ul li {
       border-bottom: 1px solid #555;
     }
@@ -228,3 +227,17 @@ input[type="checkbox"] {
        display: none;
      }
  }
+ caption > a {/*lien insee*/
+  text-decoration: underline;
+  color: rgb(37, 37, 138);
+ }
+ caption > a:visited {
+  color : rgb(184, 100, 184);
+ }
+ #velov{ /*lien vélo*/
+  text-decoration: underline;
+  color: rgb(37, 37, 138);
+ }
+ #velov:visited{  
+  color : rgb(184, 100, 184);
+}
