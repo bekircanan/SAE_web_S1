@@ -35,22 +35,20 @@ section,header>h1>strong{
   padding: 1%;
   margin: 2%;
 }
-
 #logo{
     grid-column: 2/3;
     text-align: left;
-}
-#logo{
-  border-radius: 5%;
-  margin: 1%;
+    border-radius: 5%;
+    margin: 1%;
 }
 ul{
   grid-column:3/4;
   text-align: right;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 li {
   display: inline;
-  list-style-type: none;
   padding-right: 20px;
   grid-column: 3/4;
 }
@@ -62,7 +60,6 @@ a{
 }
 header{
   display: grid;
-  grid-template-rows: 2fr;
 }
 #background-img{
   max-width: 100%;
@@ -132,8 +129,6 @@ label:nth-child(5){/*Message*/
 form > button{ /*bouton du questionnaire*/
   grid-row: 7/8;
   grid-column: 3/4;
-  height: 90%;
-  width: 97%;
 }
 #img_verticale{ /*image de l'iut*/
   border-radius: 5%;
@@ -164,6 +159,7 @@ label>select{ /*Choix option*/
 input[type="checkbox"] {
  display: none;
 }
+/* Pc */
 @media (min-width:801px) { 
   i.fa-solid.fa-bars{
     display: none;
@@ -177,6 +173,7 @@ input[type="checkbox"] {
     text-align: left;
   }
 }
+/* Tablet */
  @media (max-width:800px) { 
     label[for="menu-toggle"]{
       grid-column: 3/4;
@@ -222,9 +219,13 @@ input[type="checkbox"] {
       padding: 3%;
     }
   }
- @media (max-width:400px) {
+  /* Mobile */
+ @media (max-width:450px) {
      #img_verticale{
        display: none;
+     }
+     .grid_transport{
+      display: block;
      }
  }
  caption > a {/*lien insee*/
